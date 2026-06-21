@@ -1,15 +1,7 @@
 package InventoryManagementSystem;
 public class ProductView {
-    private static ProductController productController;
-    public ProductView(){
-        if(productController==null){
-            synchronized(ProductController.class){
-                if(productController==null){
-                    productController=new ProductController();
-                }
-            }
-        }
-    }
+    private final ProductController productController=new ProductController();
+    
     public void addProduct(String name,int quantity,double price){
         productController.add(name, quantity, price);
     }
