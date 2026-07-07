@@ -1,4 +1,4 @@
-import org.example.Calculator;
+import org.example.CalculatorJunitExp;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -7,11 +7,11 @@ import static junit.framework.TestCase.assertEquals;
 import static org.junit.Assert.*;
 
 public class CalculatorTest {
-    private Calculator calculator;
+    private CalculatorJunitExp calculator;
 
     @BeforeEach
     public void setUp(){
-        calculator=new Calculator();
+        calculator=new CalculatorJunitExp();
     }
     @AfterEach
     public void tearDown(){
